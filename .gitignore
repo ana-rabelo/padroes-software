@@ -38,7 +38,11 @@
 # *.ipr
 
 # IntelliJ
+<<<<<<< HEAD
 out/
 
 # Compiled class file
 *.class
+=======
+out/
+>>>>>>> e949a2f522d2edc98e54ab3a0bd925973f584fcd
