@@ -4,14 +4,14 @@
 
     **1.1. Atividade 02 - Padrões Strategy e Chain of Reponsibility**
         
-   - [x] Imposto
+   - [x] [Imposto](https://github.com/ana-rabelo/padroes-software/tree/main/src/Strategy/Imposto)
    - [ ] Livraria
-   - [x] Saque
-   - [x] Aplicação Bancária
+   - [x] [Saque](https://github.com/ana-rabelo/padroes-software/tree/main/src/ChainOfResponsibility/Saque)
+   - [x] [Aplicação Bancária](https://github.com/ana-rabelo/padroes-software/tree/main/src/ChainOfResponsibility/AplicacaoBancaria)
    
     **1.2. Atividade 03 - Padrões Template Method e Builder**
     
-    - [x] Relatório
+    - [x] [Relatório](https://github.com/ana-rabelo/padroes-software/tree/main/src/TemplateMethod/Relatorio)
     - [ ] Contato
     - [ ] Livro
 
