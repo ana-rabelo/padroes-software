@@ -28,4 +28,22 @@ public class Livro {
         this.paginas = paginas;
         this.isbn = isbn;
     }
+
+    // getters e setters omitidos
+
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "nomeNacional='" + nomeNacional + '\'' +
+                ", ano=" + ano +
+                ", autores=" + autores +
+                ", edicao=" + edicao +
+                ", cidade='" + cidade + '\'' +
+                ", editora='" + editora + '\'' +
+                ", nomeOriginal='" + nomeOriginal + '\'' +
+                ", tradutores=" + tradutores +
+                ", paginas=" + paginas +
+                ", isbn=" + isbn +
+                '}';
+    }
 }

@@ -13,8 +13,17 @@
     
     - [x] [Relatório](https://github.com/ana-rabelo/padroes-software/tree/main/src/TemplateMethod/Relatorio)
     - [ ] Contato
-    - [ ] Livro
+    - [x] [Livro]()
 
+
+2. Etapa 02
+
+   **2.1. Atividade 01 - Padrão State**
+   
+   - [ ] [Conta Bancária]()
+   - [ ] [Pedido]()
+   - [ ] [Processo]()
+   
 ### Enunciados
 
 1. Etapa 01
@@ -172,3 +181,80 @@ objeto, como por exemplo:
    ```
 
     Desenvolva a solução requisitada, utilizando o padrão de projeto Builder e fluent interface.
+
+
+2. Etapa 02
+   
+   **2.1. Atividade 01 - Padrão State**
+
+   2.1.1. Uma conta bancária realiza operações de saque e depósito diferente de acordo com seu estado. Uma conta que está negativo, por exemplo, não
+   aceita saques, e depositam apenas 95% do valor total de um depósito efetuado. Uma conta que está com saldo positivo, aceita saques, e o banco
+   deposita 98% do valor do depósito. Use o State para representar os possíveis estados da conta, e a sua transição de estado. Se uma conta passa a ter saldo positivo, fica com status POSITIVO. Caso contrário, possui saldo
+   NEGATIVO.
+
+   2.1.2. Refatore a classe Pedido para aplicar o design pattern State.
+
+   ```
+   public class Pedido {
+      
+      private enum Status {
+            PROCESSANDO, CANCELADO, ENVIADO
+      };
+   
+      private Status status;
+   
+      public void alterar() {
+            switch(status){
+                  case PROCESSANDO:
+                        // códgio para alteração do pedido
+                        break;
+                  case CANCELADO:
+                        String msg1 = "Não é possível realizar alterações"
+                        throw new IllegalStateException(msg1);
+                  case ENVIADO:
+                        String msg2 = "Não é possível realizar alterações";
+                        throw new IllegalStateException(msg2);
+            }
+      }
+   
+      public void cancelar() {
+            switch(status){
+                  case PROCESSANDO:
+                        // códgio para cancelamento do pedido
+                        status = Status.CANCELADO;
+                        break;
+                  case CANCELADO:
+                        String msg1 = "O pedido já foi cancelado"
+                        throw new IllegalStateException(msg1);
+                  case ENVIADO:
+                        String msg2 = "Não é possível cancelar";
+                        throw new IllegalStateException(msg2);
+            }
+      }
+   
+      public void enviar() {
+            switch(status){
+                  case PROCESSANDO:
+                        // códgio para envio do pedido
+                        status = Status.ENVIADO;
+                        break;
+                  case CANCELADO:
+                        String msg1 = "Não é possível enviar"
+                        throw new IllegalStateException(msg1);
+                  case ENVIADO:
+                        String msg2 = "O pedido já foi enviado";
+                        throw new IllegalStateException(msg2);
+            }
+      }
+   ```
+
+   2.1.3. Faça uso do padrão State para implementar o comportamento abaixo. Este comportamento correspondente ao comportamento
+   esperado para toda instância da classe Processo. Crie a classe Processo e implemente o comportamento de tal forma que, dada a ocorrência de um
+   evento, possivelmente ocorre a transição para um dado estado, juntamente com a execução das ações julgadas oportunas. Neste caso, apenas uma
+   ação deve ser executada como resultado da saída do estado “Em avaliação”. Implemente a ação “avisar interessado” por meio de uma simples mensagem
+   produzida na saída padrão. Um cenário real poderia exigir o envio de correspondência eletrônica para o email do interessado, o que não é exigido
+   neste exercício. Por fim, observe que o estado “Avaliado” é uma composição dos estados “Indeferido” e “Deferido”. São estes dois últimos que deverão ser
+   tratados. Ou seja, “Avaliado” é apenas uma abstração que não precisa ser tratada da perspectiva de implementação. Observe que, transcorrido o prazo
+   legal após avaliação de um processo, este é conduzido ao estado “Fechado”, independente se o estado é “Indeferido” ou “Deferido”.
+   
+   
