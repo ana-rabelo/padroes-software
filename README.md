@@ -12,11 +12,7 @@
     **1.2. Atividade 03 - Padrões Template Method e Builder**
     
     - [x] [Relatório](https://github.com/ana-rabelo/padroes-software/tree/main/src/TemplateMethod/Relatorio)
-<<<<<<< HEAD
     - [x] [Contato](https://github.com/ana-rabelo/padroes-software/tree/main/src/Builder/Contato)
-=======
-    - [ ] Contato
->>>>>>> 36498dcb606493e48bb9180e423720b01534fb74
     - [x] [Livro]()
 
 
@@ -24,15 +20,9 @@
 
    **2.1. Atividade 01 - Padrão State**
    
-<<<<<<< HEAD
    - [x] [Conta Bancária](https://github.com/ana-rabelo/padroes-software/tree/main/src/State/Conta)
    - [x] [Pedido](https://github.com/ana-rabelo/padroes-software/tree/main/src/State/Pedido)
    - [x] [Processo](https://github.com/ana-rabelo/padroes-software/tree/main/src/State/Processo)
-=======
-   - [ ] [Conta Bancária]()
-   - [ ] [Pedido]()
-   - [ ] [Processo]()
->>>>>>> 36498dcb606493e48bb9180e423720b01534fb74
    
 ### Enunciados
 
