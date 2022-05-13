@@ -12,4 +12,24 @@ public class Contato {
         this.endereco = endereco;
         this.email = email;
     }
+
+    public Contato(String nome, int telefone){
+        this.nome = nome;
+        this.telefone = telefone;
+    }
+
+    public Contato(String  nome, String email){
+        this.nome = nome;
+        this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Contato{" +
+                "nome='" + nome + '\'' +
+                ", telefone=" + telefone +
+                ", endereco='" + endereco + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
