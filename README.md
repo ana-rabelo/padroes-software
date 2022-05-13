@@ -12,7 +12,7 @@
     **1.2. Atividade 03 - Padrões Template Method e Builder**
     
     - [x] [Relatório](https://github.com/ana-rabelo/padroes-software/tree/main/src/TemplateMethod/Relatorio)
-    - [ ] Contato
+    - [x] [Contato](https://github.com/ana-rabelo/padroes-software/tree/main/src/Builder/Contato)
     - [x] [Livro]()
 
 
