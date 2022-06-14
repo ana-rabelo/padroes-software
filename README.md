@@ -23,6 +23,19 @@
    - [x] [Conta Bancária](https://github.com/ana-rabelo/padroes-software/tree/main/src/State/Conta)
    - [x] [Pedido](https://github.com/ana-rabelo/padroes-software/tree/main/src/State/Pedido)
    - [x] [Processo](https://github.com/ana-rabelo/padroes-software/tree/main/src/State/Processo)
+
+   **2.2. Atividade 02 - Padrão Factory Method**
+
+   - [x] [Lanchonete]()
+
+   **2.3. Atividade 03 - Padrão Observer**
+
+   - [x] [Ação]()
+   - [x] [Jogo do Bingo]()
+
+   **2.4. Atividade 04 - Padrão Abstract Factory**
+
+   - [ ] [Moeda]()
    
 ### Enunciados
 
