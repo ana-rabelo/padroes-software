@@ -15,7 +15,7 @@ public class BingoCartela {
         do {
             numero = random.nextInt(sistema.getNumMaximo()+1);
             numeros.add(numero);
-        } while(numeros.size() <= sistema.getNumCasas());
+        } while(numeros.size() < sistema.getNumCasas());
     }
 
     // O construtor inicializa as variáveis e constroi a cartela randomicamente
