@@ -2,5 +2,6 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/Builder/Contato/Director.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/Decorator/Emissor/TesteEmissorDecorator.java" charset="ISO-8859-15" />
   </component>
 </project>
